@@ -1,0 +1,21 @@
+name,price,original_price,discount_pct,currency,rating,reviews_count,seller,category,url,scraped_at
+Sony WH-1000XM5 Wireless Headphones,298.00,399.99,25.5,USD,4.7,18432,Sony Official,Electronics,https://example.com/dp/B09XS7JWHH,2024-12-15T10:23:00Z
+Apple MacBook Air M2 13-inch,1049.00,1199.00,12.5,USD,4.8,9876,Apple Store,Laptops,https://example.com/dp/B0B3C2R8MP,2024-12-15T10:24:00Z
+Logitech MX Master 3S Mouse,89.99,99.99,10.0,USD,4.6,12543,Logitech,Accessories,https://example.com/dp/B09HM94VDS,2024-12-15T10:25:00Z
+Samsung 49-inch Odyssey G9 Monitor,899.99,1299.99,30.8,USD,4.5,3421,Samsung Direct,Monitors,https://example.com/dp/B088HH6LW5,2024-12-15T10:26:00Z
+Anker PowerCore 26800mAh Power Bank,55.99,65.99,15.2,USD,4.7,45210,AnkerDirect,Chargers,https://example.com/dp/B01JIWQPMW,2024-12-15T10:27:00Z
+Keychron K2 Mechanical Keyboard,89.00,99.00,10.1,USD,4.5,6789,Keychron Official,Keyboards,https://example.com/dp/B07YB32H52,2024-12-15T10:28:00Z
+LG C3 65-inch OLED TV,1496.99,1799.99,16.8,USD,4.8,7654,LG Electronics,TVs,https://example.com/dp/B0BVXF72HV,2024-12-15T10:29:00Z
+Bose QuietComfort Earbuds II,199.00,279.00,28.7,USD,4.6,11234,Bose Direct,Audio,https://example.com/dp/B0B4PSQHD5,2024-12-15T10:30:00Z
+Dell XPS 15 Laptop,1299.99,1549.99,16.1,USD,4.4,5432,Dell Technologies,Laptops,https://example.com/dp/B0BTR3V3TK,2024-12-15T10:31:00Z
+Razer DeathAdder V3 Gaming Mouse,69.99,89.99,22.2,USD,4.7,8901,Razer Inc,Gaming,https://example.com/dp/B0BF3SKTLS,2024-12-15T10:32:00Z
+Google Pixel Buds Pro,134.99,199.99,32.5,USD,4.3,4567,Google Store,Audio,https://example.com/dp/B0B1N7SGMS,2024-12-15T10:33:00Z
+ASUS ROG Zephyrus G14 Laptop,1399.00,1599.99,12.6,USD,4.6,3210,ASUS Computer,Gaming,https://example.com/dp/B0BTGMZGQN,2024-12-15T10:34:00Z
+Elgato Stream Deck MK.2,119.99,149.99,20.0,USD,4.8,15678,Corsair,Streaming,https://example.com/dp/B09738CV2Q,2024-12-15T10:35:00Z
+SanDisk Extreme Pro 1TB SSD,79.99,129.99,38.5,USD,4.7,23456,Western Digital,Storage,https://example.com/dp/B08GV2K3CP,2024-12-15T10:36:00Z
+Nintendo Switch OLED Model,329.99,349.99,5.7,USD,4.8,34521,Nintendo,Gaming,https://example.com/dp/B098RKWHHZ,2024-12-15T10:37:00Z
+JBL Charge 5 Bluetooth Speaker,139.95,179.95,22.2,USD,4.7,19876,JBL Official,Audio,https://example.com/dp/B08WFMQXQ6,2024-12-15T10:38:00Z
+Corsair Vengeance DDR5 32GB RAM,94.99,119.99,20.8,USD,4.6,6543,Corsair,Components,https://example.com/dp/B09NRCGKQZ,2024-12-15T10:39:00Z
+TP-Link Deco X55 WiFi 6 Mesh,169.99,229.99,26.1,USD,4.5,8765,TP-Link,Networking,https://example.com/dp/B09PRB1MZM,2024-12-15T10:40:00Z
+Kindle Paperwhite Signature Edition,149.99,189.99,21.1,USD,4.7,28901,Amazon,E-Readers,https://example.com/dp/B09TMZKQR7,2024-12-15T10:41:00Z
+Secretlab Titan Evo Gaming Chair,449.00,519.00,13.5,USD,4.5,7654,Secretlab,Furniture,https://example.com/dp/B0B1CDJZF7,2024-12-15T10:42:00Z

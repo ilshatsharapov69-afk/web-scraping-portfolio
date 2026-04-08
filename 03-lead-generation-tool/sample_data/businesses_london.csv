@@ -1,0 +1,21 @@
+name,address,city,phone,email,website,category,rating,reviews_count,lead_score
+Thames Plumbing Services,42 Baker Street,London,+44 20 7946 0958,info@thamesplumbing.co.uk,https://thamesplumbing.co.uk,Plumbers,4.8,127,0.95
+CityFlow Drainage,15 Kings Road Chelsea,London,+44 20 7123 4567,contact@cityflow.co.uk,https://cityflow.co.uk,Plumbers,4.6,89,0.95
+QuickFix Plumbers,88 Camden High Street,London,+44 20 7234 5678,jobs@quickfixplumbers.com,https://quickfixplumbers.com,Plumbers,4.5,203,0.95
+Greenway Heating Ltd,23 Victoria Embankment,London,+44 20 7345 6789,hello@greenway-heating.co.uk,https://greenway-heating.co.uk,Plumbers,4.7,156,0.95
+AquaPro Solutions,9 Brick Lane,London,+44 20 7456 7890,service@aquapro.co.uk,https://aquapro.co.uk,Plumbers,4.4,67,0.95
+Kensington Drains,51 High Street Kensington,London,+44 20 7567 8901,info@kensingtondrains.com,https://kensingtondrains.com,Plumbers,4.3,45,0.90
+Southbank Plumbing Co,112 Waterloo Road,London,+44 20 7678 9012,,https://southbankplumbing.co.uk,Plumbers,4.6,178,0.75
+East End Emergency Plumbers,7 Whitechapel Road,London,+44 20 7789 0123,help@eastendplumbers.co.uk,,Plumbers,4.2,34,0.75
+Mayfair Pipes & Heating,33 Berkeley Square,London,+44 20 7890 1234,mayfair@pipesheating.com,https://pipesheating.com,Plumbers,4.9,92,0.95
+Brixton Boiler Repairs,64 Brixton Road,London,+44 20 7901 2345,repairs@brixtonboiler.co.uk,https://brixtonboiler.co.uk,Plumbers,4.1,28,0.95
+Hackney Home Services,19 Mare Street,London,+44 20 8012 3456,info@hackneyhome.co.uk,https://hackneyhome.co.uk,Plumbers,4.5,112,0.95
+Westminster Water Works,45 Victoria Street,London,+44 20 8123 4567,contact@westwaterworks.com,https://westwaterworks.com,Plumbers,4.7,198,0.95
+Islington Plumbing Experts,78 Upper Street,London,+44 20 8234 5678,expert@islingtonplumbing.co.uk,https://islingtonplumbing.co.uk,Plumbers,4.4,73,0.95
+Canary Wharf Maintenance,2 Canada Square,London,+44 20 8345 6789,,https://cwmaintenance.co.uk,Plumbers,4.0,15,0.70
+Fulham Fixtures,91 Fulham Broadway,London,+44 20 8456 7890,info@fulhamfixtures.com,https://fulhamfixtures.com,Plumbers,4.3,56,0.95
+Notting Hill Plumbing,27 Portobello Road,London,+44 20 8567 8901,hello@nhplumbing.co.uk,https://nhplumbing.co.uk,Plumbers,4.6,134,0.95
+Bermondsey Bathrooms,53 Tower Bridge Road,London,+44 20 8678 9012,sales@bermondseybaths.com,,Plumbers,4.2,41,0.75
+Greenwich Gas & Plumbing,16 Greenwich High Road,London,+44 20 8789 0123,info@greenwichgas.co.uk,https://greenwichgas.co.uk,Plumbers,4.5,87,0.95
+Shoreditch Pipe Works,38 Old Street,London,+44 20 8890 1234,work@shoreditchpipes.com,https://shoreditchpipes.com,Plumbers,4.8,165,0.95
+Battersea Boiler Co,72 Battersea Park Road,London,+44 20 8901 2345,service@batterseaboiler.co.uk,https://batterseaboiler.co.uk,Plumbers,4.4,99,0.95
