@@ -51,6 +51,9 @@ MAX_RETRIES = 3
 RETRY_DELAYS = [2, 4, 8]
 DEFAULT_DB = Path("leads.db")
 
+# Target directory base URL — replace with the actual business directory you want to scrape
+BASE_URL = "https://www.yellowpages.com"
+
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -355,9 +358,8 @@ def enrich_from_website(biz: Business, session: requests.Session) -> Business:
 
 def build_search_url(query: str, location: str, page: int = 1) -> str:
     """Build search URL for business directory (Yellow Pages style)."""
-    base = "https://www.example-directory.com/search"
     params = f"?q={query}&location={location}&page={page}"
-    return base + params
+    return BASE_URL + "/search" + params
 
 
 def parse_listing_page(html: str, category: str = "",

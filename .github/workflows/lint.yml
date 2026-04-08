@@ -1,0 +1,39 @@
+name: Code Quality
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Syntax check
+        run: |
+          python -m py_compile 01-google-maps-scraper/scraper.py
+          python -m py_compile 02-ecommerce-price-tracker/scraper.py
+          python -m py_compile 03-lead-generation-tool/scraper.py
+          echo "All files passed syntax check."
+
+      - name: Install flake8
+        run: pip install flake8
+
+      - name: Lint with flake8
+        run: |
+          flake8 --max-line-length=120 --ignore=E501,W503,E303,E266 \
+            01-google-maps-scraper/scraper.py \
+            02-ecommerce-price-tracker/scraper.py \
+            03-lead-generation-tool/scraper.py

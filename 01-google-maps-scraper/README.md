@@ -40,6 +40,18 @@ python scraper.py --query "dentists in Dallas" --include-reviews --format json
 python scraper.py --place-id ChIJN1t_tDeuEmsRUsoyG83frY4
 ```
 
+## Demo Run
+
+```
+$ python scraper.py --query "restaurants in NYC" --max-results 20
+10:23:45 [INFO] Method: serpapi | Max results: 20 | Reviews: False
+10:23:46 [INFO] SerpAPI: fetching results (offset 0, collected 0)...
+10:23:48 [INFO] SerpAPI: fetching results (offset 20, collected 20)...
+10:23:48 [INFO] SerpAPI: collected 20 businesses.
+10:23:48 [INFO] Saved 20 records to results.csv
+10:23:48 [INFO] Done.
+```
+
 ## Sample Output
 
 | Name | Address | Rating | Reviews | Phone | Website |

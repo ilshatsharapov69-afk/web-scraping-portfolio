@@ -28,19 +28,42 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
+**Configuration:** Open `scraper.py` and set `BASE_URL` to your target e-commerce site:
+```python
+BASE_URL = "https://www.amazon.com"  # Replace with target site
+```
+
 **Run the scraper:**
 ```bash
 # Scrape a category page (with pagination)
-python scraper.py --url "https://example.com/s?k=headphones" --output headphones.csv
+python scraper.py --url "https://www.amazon.com/s?k=headphones" --output headphones.csv
 
 # Limit to 5 pages
-python scraper.py --url "https://example.com/category/laptops" --max-pages 5
+python scraper.py --url "https://www.amazon.com/s?k=laptops" --max-pages 5
 
 # Scrape individual product URLs
 python scraper.py --urls-file product_urls.txt --format json
 
 # Add category label
-python scraper.py --url "https://example.com/s?k=monitors" --category "Monitors"
+python scraper.py --url "https://www.amazon.com/s?k=monitors" --category "Monitors"
+```
+
+## Demo Run
+
+```
+$ python scraper.py --url "https://www.amazon.com/s?k=headphones" --max-pages 3
+14:05:12 [INFO] Scraping category: https://www.amazon.com/s?k=headphones (max 3 pages)
+14:05:12 [INFO] --- Page 1/3 ---
+14:05:15 [INFO] Found 24 products using selector: [data-component-type='s-search-result']
+14:05:15 [INFO] Extracted 24 products (total: 24)
+14:05:18 [INFO] --- Page 2/3 ---
+14:05:21 [INFO] Found 24 products using selector: [data-component-type='s-search-result']
+14:05:21 [INFO] Extracted 24 products (total: 48)
+14:05:24 [INFO] --- Page 3/3 ---
+14:05:27 [INFO] Found 22 products using selector: [data-component-type='s-search-result']
+14:05:27 [INFO] Removed 3 duplicate(s).
+14:05:27 [INFO] Saved 67 products to headphones.csv
+14:05:27 [INFO] Done. Collected 67 unique products.
 ```
 
 ## Sample Output

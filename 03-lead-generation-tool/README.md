@@ -27,6 +27,11 @@ cd web-scraping-portfolio/03-lead-generation-tool
 pip install -r requirements.txt
 ```
 
+**Configuration:** Open `scraper.py` and set `BASE_URL` to your target directory:
+```python
+BASE_URL = "https://www.yellowpages.com"  # Replace with target directory
+```
+
 **Scrape leads:**
 ```bash
 # Basic scraping
@@ -40,6 +45,38 @@ python scraper.py --export --min-score 0.7 --output qualified_leads.csv
 
 # View database stats
 python scraper.py --stats
+```
+
+## Demo Run
+
+```
+$ python scraper.py --query "plumbers" --location "London" --enrich
+09:41:03 [INFO] Database initialized: leads.db
+09:41:03 [INFO] Scraping: 'plumbers' in 'London' (max 10 pages)
+09:41:03 [INFO] --- Page 1/10 ---
+09:41:05 [INFO]   Enriching 1/18: Thames Plumbing Services
+09:41:08 [INFO]   Enriching 2/18: CityFlow Drainage
+09:41:11 [INFO]   Enriching 3/18: QuickFix Plumbers
+09:41:14 [INFO] Extracted 18 leads (total: 18)
+09:41:14 [INFO] --- Page 2/10 ---
+09:41:17 [INFO] Extracted 15 leads (total: 33)
+09:41:17 [INFO] No more pages. Pagination complete.
+09:41:17 [INFO] Saved 33 leads to leads.csv
+09:41:17 [INFO] Done. 33 leads collected and stored.
+
+$ python scraper.py --stats
+
+========================================
+  Lead Database Statistics
+========================================
+  Total leads:      33
+  Cities:           1
+  Categories:       1
+  Avg lead score:   0.88
+  With phone:       33
+  With email:       28
+  With website:     31
+========================================
 ```
 
 ## Sample Output

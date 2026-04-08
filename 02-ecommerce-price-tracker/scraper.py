@@ -5,8 +5,8 @@ JavaScript-rendered pages. Features adaptive rate limiting, anti-bot
 detection, content deduplication, and CSV export with price history.
 
 Usage:
-    python scraper.py --url "https://example.com/category/laptops" --output prices.csv
-    python scraper.py --url "https://example.com/search?q=headphones" --max-pages 5
+    python scraper.py --url "https://www.amazon.com/s?k=laptops" --output prices.csv
+    python scraper.py --url "https://www.amazon.com/s?k=headphones" --max-pages 5
     python scraper.py --urls-file product_urls.txt --output tracked_prices.csv
 
 Dependencies:
@@ -47,6 +47,9 @@ logger = logging.getLogger(__name__)
 
 MAX_RETRIES = 3
 BLOCK_BACKOFF = (30.0, 60.0)  # seconds to wait when blocked
+
+# Target website base URL — replace with the actual e-commerce site you want to scrape
+BASE_URL = "https://www.amazon.com"
 
 SELECTORS = {
     "product_card": [
@@ -107,7 +110,6 @@ class Product:
     seller: str = ""
     category: str = ""
     url: str = ""
-    image_url: str = ""
     content_hash: str = ""
     scraped_at: str = ""
 
@@ -294,7 +296,7 @@ def extract_products(page: Page, category: str = "") -> list[Product]:
             if link:
                 href = link.get_attribute("href") or ""
                 if href.startswith("/"):
-                    url = f"https://www.example.com{href}"
+                    url = f"{BASE_URL}{href}"
                 elif href.startswith("http"):
                     url = href
 
@@ -363,7 +365,7 @@ def has_next_page(page: Page) -> Optional[str]:
                 href = el.get_attribute("href")
                 if href:
                     if href.startswith("/"):
-                        return f"https://www.example.com{href}"
+                        return f"{BASE_URL}{href}"
                     return href
         except Exception:
             continue
@@ -515,8 +517,8 @@ def parse_args() -> argparse.Namespace:
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  %(prog)s --url "https://example.com/s?k=laptops" --output laptops.csv
-  %(prog)s --url "https://example.com/category/electronics" --max-pages 5
+  %(prog)s --url "https://www.amazon.com/s?k=laptops" --output laptops.csv
+  %(prog)s --url "https://www.amazon.com/s?k=electronics" --max-pages 5
   %(prog)s --urls-file product_urls.txt --format json
         """,
     )
