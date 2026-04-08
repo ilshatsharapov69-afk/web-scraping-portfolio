@@ -629,9 +629,10 @@ def main() -> None:
         init_db(db_path)
         with get_connection(db_path) as conn:
             stats = get_stats(conn)
-        print(f"\n{'='*40}")
+        sep = "=" * 40
+        print(f"\n{sep}")
         print("  Lead Database Statistics")
-        print(f"{'='*40}")
+        print(sep)
         print(f"  Total leads:      {stats['total']:,}")
         print(f"  Cities:           {stats['cities']}")
         print(f"  Categories:       {stats['categories']}")
@@ -639,7 +640,7 @@ def main() -> None:
         print(f"  With phone:       {stats['with_phone']:,}")
         print(f"  With email:       {stats['with_email']:,}")
         print(f"  With website:     {stats['with_website']:,}")
-        print(f"{'='*40}\n")
+        print(f"{sep}\n")
         return
 
     if args.export:
