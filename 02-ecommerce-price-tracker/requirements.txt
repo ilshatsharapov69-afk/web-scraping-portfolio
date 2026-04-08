@@ -1,2 +1,2 @@
-playwright==1.40.0
-beautifulsoup4==4.12.2
+playwright==1.49.1
+beautifulsoup4==4.12.3
