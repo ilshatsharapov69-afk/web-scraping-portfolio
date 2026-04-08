@@ -22,13 +22,12 @@ import logging
 import random
 import re
 import time
-from dataclasses import dataclass, asdict, field
+from dataclasses import dataclass, asdict
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
 
-from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright, Page, Browser
+from playwright.sync_api import sync_playwright, Page
 
 # ---------------------------------------------------------------------------
 # Logging

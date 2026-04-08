@@ -630,7 +630,7 @@ def main() -> None:
         with get_connection(db_path) as conn:
             stats = get_stats(conn)
         print(f"\n{'='*40}")
-        print(f"  Lead Database Statistics")
+        print("  Lead Database Statistics")
         print(f"{'='*40}")
         print(f"  Total leads:      {stats['total']:,}")
         print(f"  Cities:           {stats['cities']}")
